@@ -1,29 +1,37 @@
 {
-  "name": "qoyod-bonus-dashboard",
+  "name": "qoyod-bonus-system",
   "version": "1.0.0",
-  "private": true,
-  "description": "ŸÑŸàÿ≠ÿ© ÿ™ÿ≠ŸÉŸÖ ÿßÿ≠ÿ™ÿ±ÿßŸÅŸäÿ© ŸÑŸÜÿ∏ÿßŸÖ ÿ≠ÿ≥ÿßÿ® ÿßŸÑÿ®ŸàŸÜÿµ ŸÖŸÜ Qoyod",
+  "description": "‰Ÿ«„ Õ”«» «·»Ê‰’ „‰ Qoyod API",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src --ext js,jsx"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["qoyod", "bonus", "api", "express"],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
+    "express": "^4.18.2",
     "axios": "^1.6.2",
-    "recharts": "^2.10.3",
-    "lucide-react": "^0.294.0",
+    "dotenv": "^16.3.1",
     "dayjs": "^1.11.10",
-    "xlsx": "^0.18.5"
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.8",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.3.6"
+    "nodemon": "^3.0.2"
   }
 }
+```
+
+---
+
+## ?? «· Õﬁﬁ „‰ «·‰Ã«Õ
+
+»⁄œ «· ⁄œÌ·° ÌÃ» √‰  —Ï ›Ì Render Logs:
+```
+==> Running 'node index.js'
+? «·Œ«œ„ Ì⁄„· ⁄·Ï «·„‰›– 10000
+?? «·»Ì∆…: production
+?? «·—«»ÿ: http://localhost:10000
+?? API: http://localhost:10000/api/bonus/calculate?year=2026&month=02
